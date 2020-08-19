@@ -1,0 +1,40 @@
+//http://stylus-lang.com/
+
+//примеры
+//
+//@import 'inc/header'   как подключить другие стили
+//input-height = 40px    пременнная
+//
+//миксин сбросить стили
+//reset(display = block)
+//  display display
+//  margin 0
+//  padding 0
+//
+//div
+//  reset()
+//span
+//  reset(inline)
+
+//@import "_normalize.styl"
+//normalize
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family 'Roboto', sans-serif
+  font-size 14px
+  background-color: #fff
+
+.container
+  max-width 1180px
+  width 100%
+  margin 0 auto
+
+
+@import "_header.styl"
+@import "_search.styl"
+@import "_buildings.styl"
+@import "_footer.styl"
+

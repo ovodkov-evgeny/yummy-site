@@ -1,0 +1,128 @@
+$blue = #1698d9
+$red = #d91667
+$greey = #b3b3b3
+
+*
+  margin: 0
+  padding: 0
+
+body
+  font-family: 'Exo 2.0'
+  font-size 14px
+  background-color: #fff
+
+.container
+  max-width 1280px
+  width 100%
+  margin 0 auto
+
+.bg
+  width: 100%
+  height 100vh
+  background url('/img/Shadow.jpg') no-repeat center
+  background-size cover
+  position: fixed
+  top: 0
+
+.cats
+
+  h3
+    text-shadow 0px 1px 0 #000000
+    font-size 36px
+    font-weight 100
+    font-stretch normal
+    font-style normal
+    line-height normal
+    letter-spacing normal
+    text-align center
+    color #ffffff
+    margin: 45px 0 5px
+    position: relative
+
+  &__list
+    display flex
+    justify-content space-around
+    flex-wrap wrap
+    box-sizing border-box
+
+  &__item
+    margin: 20px
+
+  .item
+    width 320px
+    height 480px
+    border-radius 12px
+    background-size contain
+    position: relative
+    box-sizing border-box
+
+    &__content
+      padding 5% 0 0 15%
+
+    &__subtitle
+      font-siz: 16px
+      color #666666
+
+    &__title
+      font-size 48px
+      color #000000
+      font-weight bold
+      span
+        display block
+        font-size 24px
+
+    &__quality
+      font-size 14px
+      line-height 1.14
+      color #666666
+
+    &__size
+      width 81px
+      height 81px
+      background-color #1698d9
+      color #ffffff
+      border-radius: 50%
+      display: flex
+      flex-direction column
+      justify-content: center
+      align-items center
+      position: absolute
+      right: 10px
+      bottom: 10px
+      & span:first-child
+        font-size 42px
+        font-weight bold
+      span
+        display: block
+        font-size: 21px
+
+    &_blue
+      background url('/img/cat1.png') no-repeat center bottom
+      .item__size
+        background-color: $blue
+
+    &_red
+      background url('/img/cat2.png') no-repeat center bottom
+      .item__size
+        background-color: $red
+
+    &_greey
+      background url('/img/cat3.png') no-repeat center bottom
+      .item__size
+        background-color: $greey
+
+
+  .text
+    font-size: 13px
+    color: #fff
+    margin: 16px
+    text-align: center
+    position: relative
+
+    &_no
+      color: #ffff66
+
+    a
+      color: $blue
+      font-weight: bold
+
